@@ -2,10 +2,12 @@ var c = document.getElementById('canvas')
 ctx = canvas.getContext("2d");
 var s = sprinkler.create(c) 
 var audio = new Audio('sailor_moon_sound_1.mp3');
-
+document.getElementById("bg-image").style.display = "none";
 
 function lunaDrop(message) {
     audio.play();
+
+    document.getElementById("bg-image").style.display = "block";
 
     var images = [
         'luna-pixel.png',
@@ -16,10 +18,11 @@ function lunaDrop(message) {
         ddyMax: 200
       })
       setTimeout(function(){
+        document.getElementById("bg-image").style.display = "none";
         stop();
-      }, 2000)
-}
+      }, 6500)
 
+}
 
 
 
