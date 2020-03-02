@@ -40,4 +40,4 @@ ComfyJS.onChat = ( user, message, flags, self, extra ) => {
         lunaDrop( message );
     }
 };
-ComfyJS.Init( "smilesandteaa" );
+ComfyJS.Init( "shadesofpixie" );
